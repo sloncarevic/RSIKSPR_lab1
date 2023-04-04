@@ -1,4 +1,4 @@
-package fer.rsikspr.lab1;
+package fer.rsikspr.lab1.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController {
     @GetMapping("/health")
-    public String health(){
-        return "Up and running!";
+    public String health() {
+        return "OK";
     }
 }
